@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CMS Simplificado</title>
+    <title>ESCS Portfólio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
@@ -15,17 +15,17 @@
         <img
           src="https://www.escs.ipl.pt/sites/default/files/ESCS-Logo.png"
           alt="Logo ESCS"
-          class="h-14 w-auto object-contain"
+          class="h-12 w-auto object-contain"
         />
         <a href="admin.php" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-black transition-all">Admin</a>
     </nav>
 
     <main class="container mx-auto px-4 py-8">
         <div class="text-center mb-12">
-            <h1 class="text-5xl font-bold text-gray-900 mb-4">Biblioteca Digital</h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Explore nossa coleção de artigos, publicações e estudos de caso</p>
+            <h1 class="text-5xl font-bold text-gray-900 mb-4">ESCS Portfólio</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Descobre projetos de alunos da nossa escola</p>
             <div id="searchBox" class="max-w-2xl mx-auto mb-12">
-                <input type="text" onkeyup="render(this.value)" placeholder="🔍 Buscar artigos..." class="w-full p-4 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 outline-none">
+                <input type="text" onkeyup="render(this.value)" placeholder="🔍 Pesquisar projetos..." class="w-full p-4 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 outline-none">
             </div>
         </div>
 

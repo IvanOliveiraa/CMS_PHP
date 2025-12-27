@@ -52,7 +52,7 @@ if ($method === 'GET') {
                 $item['images'][] = ['id' => $id, 'path' => $path];
             } 
         }
-        $item['cover'] = $item['images'][0]['path'] ?? 'https://via.placeholder.com/800x600?text=Sem+Imagem';
+        $item['cover'] = $item['images'][0]['path'] ?? 'https://placehold.co/800x600?text=' . urlencode($item['title']);
         unset($item['imgs']);
     }
     json($list);

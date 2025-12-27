@@ -57,8 +57,7 @@ if (empty($_SESSION['user'])) {
                 <textarea name="description" required rows="3" placeholder="Descrição" class="input-field"></textarea>
                 <div class="grid md:grid-cols-2 gap-4">
                     <select name="category" class="input-field">
-                        <option>Tecnologia</option><option>Ciência</option><option>Educação</option><option>Negócios</option><option>Saúde</option>
-                    </select>
+                        <option>Audiovisual e Multimédia</option><option>Jornalismo</option><option>Publicidade e Marketing</option><option>Relações Públicas e Comunicação Empresarial</option>
                     <input name="youtubeUrl" placeholder="URL do YouTube" class="input-field">
                 </div>
                 
@@ -77,7 +76,7 @@ if (empty($_SESSION['user'])) {
 
                     <!-- Upload Carrossel -->
                     <div>
-                        <label class="block text-sm font-bold mb-2">Imagens do Carrossel</label>
+                        <label class="block text-sm font-bold mb-2">Imagens em Carrossel</label>
                         <div class="upload-area" onclick="document.getElementById('carouselInput').click()">
                             <input type="file" id="carouselInput" multiple accept="image/*" class="hidden" onchange="previewCarousel(this)">
                             <div id="carouselPlaceholder">
