@@ -62,7 +62,7 @@
                         <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">${a.description}</p>
                         <div class="text-xs text-gray-400 mt-auto flex justify-between">
                             <span>${a.author}</span>
-                            <span>${new Date(a.created_at).toLocaleDateString()}</span>
+                            <span>${new Date(a.completion_date).toLocaleDateString()}</span>
                         </div>
                     </div>
                 </div>

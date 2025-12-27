@@ -21,7 +21,7 @@ if (empty($_SESSION['user'])) {
        <img
           src="https://www.escs.ipl.pt/sites/default/files/ESCS-Logo.png"
           alt="Logo ESCS"
-          class="h-14 w-auto object-contain"
+          class="h-12 w-auto object-contain"
         />
         <div class="flex gap-2">
             <a href="index.php" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">Ver Site</a>
@@ -32,7 +32,7 @@ if (empty($_SESSION['user'])) {
     <main class="container mx-auto px-4 py-8">
         <div class="text-center mb-12">
             <h1 class="text-5xl font-bold text-gray-900 mb-4">Gerenciar Publicações</h1>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Adicione, edite ou remova artigos da biblioteca digital</p>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Adiciona, edita ou remova projetos do portfólio da ESCS</p>
             <div class="max-w-3xl mx-auto mb-12 flex gap-4">
                 <input type="text" onkeyup="renderList(this.value)" placeholder="🔍 Buscar artigos..." class="w-full p-4 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 outline-none">
                 <a href="article_form.php" class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 font-bold shadow-sm transition-all whitespace-nowrap flex items-center">
