@@ -24,7 +24,7 @@ if (empty($_SESSION['user'])) {
           class="h-12 w-auto object-contain"
         />
         <div class="flex gap-2">
-            <a href="index.php" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">Ver Site</a>
+            <a href="index.php" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">Home</a>
             <a href="login.php?logout=1" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-all">Sair</a>
         </div>
     </nav>
