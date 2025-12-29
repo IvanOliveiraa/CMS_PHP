@@ -12,11 +12,13 @@
 </head>
 <body class="bg-gray-50 font-sans">
     <nav class="bg-white shadow p-4 flex justify-evenly items-center sticky top-0 z-10">
-        <img
-          src="https://www.escs.ipl.pt/sites/default/files/ESCS-Logo.png"
-          alt="Logo ESCS"
-          class="h-12 w-auto object-contain"
-        />
+        <a href="index.php">
+            <img
+              src="https://www.escs.ipl.pt/sites/default/files/ESCS-Logo.png"
+              alt="Logo ESCS"
+              class="h-12 w-auto object-contain"
+            />
+        </a>
         <a href="admin.php" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-black transition-all">Admin</a>
     </nav>
 

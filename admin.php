@@ -18,11 +18,13 @@ if (empty($_SESSION['user'])) {
 </head>
 <body class="bg-gray-50 font-sans">
     <nav class="bg-white shadow p-4 flex justify-evenly items-center sticky top-0 z-10">
-       <img
-          src="https://www.escs.ipl.pt/sites/default/files/ESCS-Logo.png"
-          alt="Logo ESCS"
-          class="h-12 w-auto object-contain"
-        />
+       <a href="index.php">
+           <img
+              src="https://www.escs.ipl.pt/sites/default/files/ESCS-Logo.png"
+              alt="Logo ESCS"
+              class="h-12 w-auto object-contain"
+            />
+       </a>
         <div class="flex gap-2">
             <a href="index.php" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-all">Home</a>
             <a href="login.php?logout=1" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-all">Sair</a>
