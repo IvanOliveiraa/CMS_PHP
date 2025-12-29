@@ -62,7 +62,7 @@
                         <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">${a.description}</p>
                         <div class="text-xs text-gray-400 mt-auto flex justify-between">
                             <span>${a.author}</span>
-                            <span>${new Date(a.completion_date).toLocaleDateString()}</span>
+                            <span>${a.completion_date ? new Date(a.completion_date + 'T12:00:00').toLocaleDateString() : ''}</span>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">${a.category}</span>
                     <span>${a.author}</span>
                     ${a.discipline ? `<span>Disciplina: ${a.discipline}</span>` : ''}
-                    ${a.completion_date ? `<span>Realizado em: ${new Date(a.completion_date).toLocaleDateString()}</span>` : ''}
+                    ${a.completion_date ? `<span>Realizado em: ${new Date(a.completion_date + 'T12:00:00').toLocaleDateString()}</span>` : ''}
                     <span>Publicado: ${new Date(a.created_at).toLocaleDateString()}</span>
                 </div>
                 <div class="prose max-w-none text-gray-700 whitespace-pre-line mb-8">${a.description}</div>

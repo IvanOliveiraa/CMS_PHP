@@ -131,6 +131,8 @@ if (empty($_SESSION['user'])) {
 
         function populateForm(a) {
             const form = document.getElementById('form');
+            // Map DB column youtube_url to form field youtubeUrl
+            a.youtubeUrl = a.youtube_url;
             ['id','title','description','category','youtubeUrl','completion_date','discipline'].forEach(f => form[f].value = a[f] || '');
             
             const wrapper = document.getElementById('authors-wrapper');

@@ -34,7 +34,7 @@ if (empty($_SESSION['user'])) {
             <h1 class="text-5xl font-bold text-gray-900 mb-4">Gerenciar Publicações</h1>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Adiciona, edita ou remova projetos do portfólio da ESCS</p>
             <div class="max-w-3xl mx-auto mb-12 flex gap-4">
-                <input type="text" onkeyup="renderList(this.value)" placeholder="🔍 Buscar artigos..." class="w-full p-4 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 outline-none">
+                <input type="text" onkeyup="renderList(this.value)" placeholder="🔍 Pesquisar projetos...." class="w-full p-4 rounded-lg border shadow-sm focus:ring-2 focus:ring-blue-500 outline-none">
                 <a href="article_form.php" class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 font-bold shadow-sm transition-all whitespace-nowrap flex items-center">
                     + Nova publicação
                 </a>
@@ -66,7 +66,7 @@ if (empty($_SESSION['user'])) {
                         <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-1">${a.description}</p>
                         <div class="text-xs text-gray-400 mt-auto flex justify-between mb-4">
                             <span>${a.author}</span>
-                            <span>${new Date(a.created_at).toLocaleDateString()}</span>
+                            <span>${a.completion_date ? new Date(a.completion_date + 'T12:00:00').toLocaleDateString() : ''}</span>
                         </div>
                         <div class="flex gap-2 border-t pt-4">
                             <a href="article_form.php?id=${a.id}" class="flex-1 bg-blue-50 text-blue-600 py-2 rounded hover:bg-blue-100 font-medium transition-colors text-center">Editar</a>
